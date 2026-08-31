@@ -1,116 +1,58 @@
-# LearnPath AI Next
+# 🧠 LearnPath AI
 
-An adaptive career-intelligence platform that turns a learner's goal, current skills, time budget and assessment evidence into an explainable, prerequisite-aware roadmap.
+### Your next best move, made intelligent.
 
-## What is upgraded
+LearnPath AI is an adaptive **career-intelligence platform** that transforms a learner's career goal, existing skills, available study time, and learning evidence into a personalized and explainable learning path.
 
-- Premium responsive React/Vite dashboard
-- Career readiness score
-- Interactive skill/dependency graph
-- Adaptive roadmap regeneration after assessments
-- Explainable recommendation scoring
-- AI Coach with optional OpenAI integration; works in deterministic local mode without an API key
-- Resume text/PDF upload and skill extraction
-- Target-role gap analysis
-- Project recommendations
-- Smart weekly study schedule
-- SQLite persistence through FastAPI
-- API documentation via FastAPI
-- Health endpoint
-- Backend tests
-- Dockerfiles for frontend and backend
-- Render deployment blueprint
+Instead of giving every learner the same roadmap, LearnPath continuously identifies **what the learner should focus on next and why**.
 
-## Stack
+---
 
-Frontend: React, Vite, Lucide React, Recharts
-Backend: FastAPI, Pydantic, SQLite, scikit-learn, PyPDF
-AI: optional OpenAI-compatible provider; deterministic fallback when no key is configured
+## 🚀 The Problem
 
-## Run in VS Code
+Most learning platforms follow a simple model:
 
-### Backend (Windows PowerShell)
+> Choose a goal → Get a fixed course/roadmap → Start learning.
 
-```powershell
-cd backend
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-copy .env.example .env
-uvicorn app.main:app --reload --port 8000
-```
+But learners are not starting from the same place.
 
-### Frontend
+A student may already know Python but struggle with React.  
+Another may know the fundamentals but lack project experience.  
+Another may have only 1–2 hours per day.
 
-Open another terminal:
+A static roadmap cannot effectively handle these differences.
 
-```powershell
-cd frontend
-npm install
-npm run dev
-```
+### LearnPath solves this by making the learning journey adaptive.
 
-Open the Vite URL, normally http://localhost:5173.
+---
 
-## Optional AI
+## 💡 Our Approach
 
-Copy `.env.example` to `.env` and add:
+LearnPath follows an evidence-driven learning loop:
 
-```env
-OPENAI_API_KEY=your_key
-OPENAI_MODEL=gpt-4.1-mini
-```
+```text
+Career Goal
+     ↓
+Target Role
+     ↓
+Skill Requirements
+     ↓
+Learner Profile
+     ↓
+Skill Gap Analysis
+     ↓
+Prerequisite-aware Planning
+     ↓
+Next Best Action
+     ↓
+Learning + Practice
+     ↓
+Assessment / Evidence
+     ↓
+Updated Learning Path
 
-The application still works without a key. The local AI Coach uses the learner's actual roadmap/profile rather than pretending a remote model was called.
+Core idea
 
-## Tests
+Assess → Learn → Build → Prove → Adapt
 
-```powershell
-cd backend
-pytest -q
-```
-
-## Production deployment
-
-### Backend
-Deploy `backend` to a Python host such as Render/Railway/Fly.io.
-
-Start command:
-
-```bash
-uvicorn app.main:app --host 0.0.0.0 --port $PORT
-```
-
-### Frontend
-Build:
-
-```bash
-npm run build
-```
-
-Serve the generated `frontend/dist` on Vercel/Netlify/Render static hosting.
-
-Set:
-
-```env
-VITE_API_URL=https://YOUR-BACKEND-DOMAIN
-```
-
-For a one-click Render starting point, see `render.yaml`.
-
-## Demo flow
-
-1. Open the dashboard.
-2. Set goal to: `Become an AI Engineer in 6 months. I know Python and basic ML. I can study 2 hours a day.`
-3. Generate plan.
-4. Show readiness, skill graph and roadmap.
-5. Submit an assessment for Python/ML.
-6. Regenerate the roadmap and show the changed next-best action.
-7. Upload a resume or paste resume text.
-8. Show target-role gaps.
-9. Ask the AI Coach: `Why is Deep Learning recommended next?`
-10. Show the weekly schedule and project recommendation.
-
-## Important
-
-This is designed as an original upgraded implementation rather than an untouched copy of the reference repository. Review third-party licenses and replace/demo assets according to your team's ownership and submission rules.
+The goal is not simply to tell learners what to learn, but to continuously determine what they should learn next.
