@@ -617,3 +617,21 @@ To contribute to LearnPath AI:
 
 ```bash
 git checkout -b feature/your-feature
+
+## 🌐 Live Demo
+
+🚀 **Live Application:** https://learnpath-ai-1-7s0g.onrender.com
+
+🔗 **Backend API:** https://learnpath-ai-0km2.onrender.com
+
+📦 **Source Code:** https://github.com/anshikajain17/LearnPath-AI
+
+## 👩‍💻 Team
+
+Built with ❤️ for building a more intelligent and personalized learning journey.
+
+---
+
+## 📄 License
+
+This project is developed for educational, hackathon, and demonstration purposes.
