@@ -1,58 +1,82 @@
-# 🧠 LearnPath AI
+# 🚀 LearnPath AI
 
-### Your next best move, made intelligent.
+### Adaptive Career Intelligence for Personalized Learning
 
-LearnPath AI is an adaptive **career-intelligence platform** that transforms a learner's career goal, existing skills, available study time, and learning evidence into a personalized and explainable learning path.
+LearnPath AI is an AI-powered career intelligence platform that transforms a learner's **career goal, current skills, available learning time, and learning evidence** into a personalized, adaptive and explainable learning roadmap.
 
-Instead of giving every learner the same roadmap, LearnPath continuously identifies **what the learner should focus on next and why**.
+Instead of simply recommending courses, LearnPath AI answers the more important question:
 
----
+> **"What should I learn next to become job-ready for my target role?"**
 
-## 🚀 The Problem
-
-Most learning platforms follow a simple model:
-
-> Choose a goal → Get a fixed course/roadmap → Start learning.
-
-But learners are not starting from the same place.
-
-A student may already know Python but struggle with React.  
-Another may know the fundamentals but lack project experience.  
-Another may have only 1–2 hours per day.
-
-A static roadmap cannot effectively handle these differences.
-
-### LearnPath solves this by making the learning journey adaptive.
+The platform continuously analyzes the learner's current state against the requirements of their target career, identifies skill gaps and prerequisites, and recommends the **next best learning action**.
 
 ---
 
-## 💡 Our Approach
+## 📌 Overview
 
-LearnPath follows an evidence-driven learning loop:
+Today's learners have access to thousands of:
+
+- Courses
+- Tutorials
+- Certifications
+- Projects
+- Documentation
+- Practice platforms
+- Learning resources
+
+However, having more resources does not necessarily make learning easier.
+
+The major challenge is deciding:
+
+- What should I learn first?
+- Which skill is actually important for my target role?
+- Do I have the prerequisites for this skill?
+- What should I do if I am missing a prerequisite?
+- How much should I learn every day?
+- Am I actually progressing toward my career goal?
+- What should be my next action?
+
+LearnPath AI acts as an **intelligent decision layer between the learner and the overwhelming amount of available learning content.**
+
+---
+
+# 🧩 Problem Statement
+
+Most existing learning platforms follow a content-first approach:
 
 ```text
-Career Goal
-     ↓
-Target Role
-     ↓
-Skill Requirements
-     ↓
-Learner Profile
-     ↓
-Skill Gap Analysis
-     ↓
-Prerequisite-aware Planning
-     ↓
-Next Best Action
-     ↓
-Learning + Practice
-     ↓
-Assessment / Evidence
-     ↓
-Updated Learning Path
+Search for a Course
+        ↓
+Choose a Course
+        ↓
+Learn Topics
+        ↓
+Complete Content
+        ↓
+Hope the Skills Are Relevant
 
-Core idea
+ # This creates several problems:
 
-Assess → Learn → Build → Prove → Adapt
+1. Information Overload
 
-The goal is not simply to tell learners what to learn, but to continuously determine what they should learn next.
+Learners are presented with hundreds of courses and resources without knowing which one is actually relevant to their goal.
+
+2. No Personalized Skill Gap Analysis
+
+Generic learning paths do not always consider what the learner already knows.
+
+3. Missing Prerequisite Awareness
+
+Learners may start advanced topics without having the foundational skills required to understand them.
+
+4. No Clear Next Action
+
+Even after identifying a skill gap, learners often do not know what they should do next.
+
+5. Static Learning Paths
+
+Traditional roadmaps are usually fixed and do not adapt when the learner gains new skills or provides new evidence.
+
+6. Career Disconnect
+
+Learning progress is often measured in terms of courses completed rather than actual readiness for a target career role.
